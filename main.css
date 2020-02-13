@@ -1,0 +1,48 @@
+html,body {
+    width: 100%;
+    margin: 0 auto;
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: #373737;
+   
+}
+#bg-image {
+    background-image: url("Swimmer.jpg");
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+#main {
+    text-align: center;
+    width: 100%;
+    padding-top: 50px;
+    
+
+    
+    
+    
+}
+#popOut{
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12);
+    background-color: whitesmoke;
+    display: inline-block;
+    font-size: 27px;
+    font-weight: 300;
+    padding-top: 40px;
+    height: fit-content;
+    width: 80%;
+    border-radius: 15px;
+}
+.selectorOption{
+    display: inline-block;
+
+}
+.selectorTitle {
+
+    display: inline-flex;
+}
