@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css?family=Six+Caps&display=swap" rel="stylesheet">
     <link href="main.css" rel="stylesheet" type="text/css">
     <script src="tabs.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 </head>
 
 <body>
@@ -15,19 +16,17 @@
         <div id="main">
             <div id="popOut">
                 <div id="topBar">
+                    <a href="https://www.triathlon-batteries.com/" id="triathlonImage"></a>
                     <div class="tab">
-                        <button class="tablinks"  onclick="openTab(event, 'batterySelector')"> Battery Selector</button>
-                        <button class="tablinks"  onclick="openTab(event, 'chargerSelector')"> Charger Selector</button>
+                        <button class="tablinks active"  onclick="openTab(event, 'batterySelector')"> Battery Selector</button>
+                        <button  class="tablinks"  onclick="openTab(event, 'chargerSelector')"> Charger Selector</button>
                     </div>
-                    <a href="https://www.triathlon-batteries.com/">
-                        <img id="triathlonImage" alt="logo" src="https://www.triathlon-batteries.com/fileadmin/bsdist/theme/img/logo_batteries.png">
-                    </a>
                 </div>
-                 <div id="batterySelector" class="tabcontent"> 
+                 <div id="batterySelector" class="tabcontent" style="display: inline-flex;"> 
                     <div id="leftSide"> 
                         <div class="selectorOption">
                             <div class="selectorTitle">Manufacturer</div>
-                            <select>
+                            <select class="selectpicker">
                                 <option> A Great Option</option>
                                 <option> This one sucks</option>
                                 <option> Decent Option</option>
@@ -35,8 +34,8 @@
                             </select>
                         </div>
                         <div class="selectorOption">
-                            <div class= "selectorTitle">Models</div>
-                            <select>
+                            <div class="selectorTitle">Models</div>
+                            <select class="selectpicker">
                                 <option> A Great Option</option>
                                 <option> This one sucks</option>
                                 <option> Decent Option</option>
@@ -44,8 +43,8 @@
                             </select>
                         </div>
                         <div class="selectorOption">
-                            <div class= "selectorTitle">Voltage</div>
-                            <select>
+                            <div class="selectorTitle">Voltage</div>
+                            <select class="selectpicker">
                                 <option> A Great Option</option>
                                 <option> This one sucks</option>
                                 <option> Decent Option</option>
@@ -53,8 +52,8 @@
                             </select>
                         </div>
                         <div class="selectorOption">
-                            <div class= "selectorTitle">Lift Truck</div>
-                            <select>
+                            <div class="selectorTitle" >Lift Truck</div>
+                            <select class="selectpicker">
                                 <option> A Great Option</option>
                                 <option> This one sucks</option>
                                 <option> Decent Option</option>
@@ -62,8 +61,8 @@
                             </select>
                         </div>
                         <div class="selectorOption">
-                            <div class= "selectorTitle">Battery Family</div>
-                            <select>
+                            <div class="selectorTitle" >Battery Family</div>
+                            <select class="selectpicker">
                                 <option> A Great Option</option>
                                 <option> This one sucks</option>
                                 <option> Decent Option</option>
@@ -71,8 +70,8 @@
                             </select>
                         </div>
                         <div class="selectorOption">
-                            <div class="selectorTitle">Power Supply</div>
-                            <select>
+                            <div class="selectorTitle" >Power Supply</div>
+                            <select class="selectpicker">
                                 <option> A Great Option</option>
                                 <option> This one sucks</option>
                                 <option> Decent Option</option>
@@ -80,8 +79,8 @@
                             </select>
                         </div>
                         <div class="selectorOption">
-                            <div class="selectorTitle">VAC</div>
-                            <select>
+                            <div  class="selectorTitle">VAC</div>
+                            <select class="selectpicker">
                                 <option> A Great Option</option>
                                 <option> This one sucks</option>
                                 <option> Decent Option</option>
@@ -89,8 +88,8 @@
                             </select>
                         </div>
                         <div class="selectorOption">
-                            <div class= "selectorTitle">Charger Family</div>
-                            <select>
+                            <div  class="selectorTitle">Charger Family</div>
+                            <select class="selectpicker">
                                 <option> A Great Option</option>
                                 <option> This one sucks</option>
                                 <option> Decent Option</option>
@@ -98,8 +97,8 @@
                             </select>
                         </div>
                         <div class="selectorOption">
-                            <div class= "selectorTitle">Charger Profile</div>
-                            <select>
+                            <div class="selectorTitle" >Charger Profile</div>
+                            <select class="selectpicker">
                                 <option> A Great Option</option>
                                 <option> This one sucks</option>
                                 <option> Decent Option</option>
@@ -108,17 +107,15 @@
                         </div>  
                     </div>
                     <div id="rightSide">
-                        <div>
-                            <div> Selected Items:</div>
-                            <div id="selectedItem"> 
-                                <div class="selectedCategory"> Manufacturer </div>
-                                <div class="selectedCategory"> Truck </div>
-                                <div class="selectedCategory">Battery Family</div>
-                                <div class="selectedCategory"> Battery</div>
-                                <div class="selectedCategory"> Type</div>
-                                <div class="selectedCategory">Charger Family</div>
-                                <div class="selectedCategory">Charger</div>
-                            </div>
+                        <div> Selected Items:</div>
+                        <div id="selectedItem"> 
+                            <div class="selectedCategory"> Manufacturer: </div>
+                            <div class="selectedCategory"> Truck: </div>
+                            <div class="selectedCategory">Battery Family: </div>
+                            <div class="selectedCategory"> Battery</div>
+                            <div class="selectedCategory"> Type: </div>
+                            <div class="selectedCategory">Charger Family: </div>
+                            <div class="selectedCategory">Charger: </div>
                         </div>
                     </div>
                 </div>
